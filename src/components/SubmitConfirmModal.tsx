@@ -30,13 +30,13 @@ export default function SubmitConfirmModal({
                 <button onClick={onClose} className="absolute right-4 top-4 text-gray-500 hover:text-gray-700" >
                     ✕
                 </button>
-                <h2 className="text-xs font-semibold text-[#1C3141] mb-3">
+                <h2 className="text-xs  text-[#1C3141] mb-3">
                     Are you sure you want to submit the test?
                 </h2>
                 <hr className="mb-2 h-[1.5px] bg-[#CECECE]" />
                 <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-[#1c3141] rounded flex items-center justify-center">
+                    <div className="flex items-center py-1.5 gap-3">
+                        <div className="w-7 h-7 bg-[#1c3141] rounded flex items-center justify-center">
                             <Timer className="text-white" size={12} />
                         </div>
                         <p className="text-sm text-gray-700 font-medium">
@@ -45,8 +45,8 @@ export default function SubmitConfirmModal({
                         </p>
                     </div>
 
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-[#DDA428] rounded flex items-center justify-center">
+                    <div className="flex items-center py-1.5 gap-3">
+                        <div className="w-7 h-7 bg-[#DDA428] rounded flex items-center justify-center">
                             <ListChecks className="text-white" size={12} />
                         </div>
                         <p className="text-sm text-gray-700 font-medium">
@@ -55,8 +55,8 @@ export default function SubmitConfirmModal({
                         </p>
                     </div>
 
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-[#4CAF50] rounded flex items-center justify-center">
+                    <div className="flex items-center py-1.5 gap-3">
+                        <div className="w-7 h-7 bg-[#4CAF50] rounded flex items-center justify-center">
                             <ClipboardList className="text-white" size={12} />
                         </div>
                         <p className="text-sm text-gray-700 font-medium">
@@ -65,8 +65,8 @@ export default function SubmitConfirmModal({
                         </p>
                     </div>
 
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-[#800080] rounded flex items-center justify-center">
+                    <div className="flex items-center py-1.5 gap-3">
+                        <div className="w-7 h-7 bg-[#800080] rounded flex items-center justify-center">
                             <Bookmark className="text-white" size={12} />
                         </div>
                         <p className="text-sm text-gray-700 font-medium">

@@ -118,8 +118,10 @@ export default function McqPage() {
         <AuthGuard>
             <Navbar />
 
-            <div className="min-h-screen w-full flex justify-center bg-[#EDF4FF]">
-                <div className="w-full px-4 mt-6 mb-10">
+            {/* <div className="min-h-screen w-full flex justify-center bg-[#EDF4FF]"> */}
+            {/* <div className="w-full px-4 mt-6 mb-10"> */}
+            <div className="min-h-screen w-full flex justify-center bg-[#EDF4FF] px-2 sm:px-4">
+                <div className="w-full mx-auto px-2 sm:px-4 mt-4 ">
 
                     {view === "exam" && (
                         <QuestionCard

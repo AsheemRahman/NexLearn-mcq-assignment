@@ -10,8 +10,8 @@ interface PhoneStepProps {
 
 export default function PhoneStep({ phone, setPhone, error, handlePhoneSubmit }: PhoneStepProps) {
     return (
-        <>
-            <div>
+        <div className="flex flex-col h-full">
+            <div className="grow">
                 <h2 className="text-2xl text-[#1C3141] font-semibold">Enter your phone number</h2>
                 <p className="text-sm text-gray-600 mt-1">
                     We use your mobile number to identify your account
@@ -25,7 +25,7 @@ export default function PhoneStep({ phone, setPhone, error, handlePhoneSubmit }:
                         <div className="h-1 bg-[#138808]" />
                     </div>
                     <span className="text-gray-700 text-[15px] font-medium">+91</span>
-                    <input type="text" maxLength={10} value={phone} onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))} placeholder="1234 567891" className="w-full text-black outline-none text-[15px]"/>
+                    <input type="text" maxLength={10} value={phone} onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))} placeholder="1234 567891" className="w-full text-black outline-none text-[15px]" />
                 </div>
 
                 {error && <p className="text-red-500 text-xs mt-1">{error}</p>}
@@ -39,6 +39,6 @@ export default function PhoneStep({ phone, setPhone, error, handlePhoneSubmit }:
             <button onClick={handlePhoneSubmit} className="w-full bg-[#1C3141] text-white py-3 rounded-md mt-6 hover:bg-[#0b1623] transition">
                 Get Started
             </button>
-        </>
+        </div>
     );
 }

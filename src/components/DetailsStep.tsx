@@ -62,7 +62,7 @@ export default function DetailsStep({ details, setDetails, handleSubmitDetails, 
 
     return (
         <>
-            <div className="flex-1 overflow-y-auto pr-2">
+            <div className="flex-1 overflow-y-auto pr-2 max-h-[45vh]">
                 <h2 className="text-2xl text-[#1C3141] font-semibold">Add Your Details</h2>
                 <div className="flex justify-center">
                     <label className="mt-3 w-[55%] h-30 border-2 border-dashed border-gray-300 rounded-xl flex flex-col items-center justify-center cursor-pointer relative">
@@ -117,7 +117,7 @@ export default function DetailsStep({ details, setDetails, handleSubmitDetails, 
                 </select>
             </div>
 
-            <button className="w-full bg-[#1C3141] text-white py-3 rounded-md mt-6 hover:bg-[#0b1623] transition" onClick={handleDetails}>
+            <button className="w-full bg-[#1C3141] text-white py-2.5 rounded-md mt-3 hover:bg-[#0b1623] transition" onClick={handleDetails}>
                 Get Started
             </button>
         </>

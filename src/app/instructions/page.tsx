@@ -57,7 +57,7 @@ export default function Instructions() {
                         </ol>
                     </div>
 
-                    <button className="w-100 bg-[#1C3141] hover:bg-[#0a1b2f] transition text-white py-3 rounded-lg" onClick={handleStartTest}>
+                    <button className="w-1/2  bg-[#1C3141] hover:bg-[#0a1b2f] transition text-white py-3 rounded-lg text-sm sm:text-base md:text-lg font-medium" onClick={handleStartTest}>
                         Start Test
                     </button>
                 </div>

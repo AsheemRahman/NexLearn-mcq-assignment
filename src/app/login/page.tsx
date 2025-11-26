@@ -70,8 +70,8 @@ export default function Login() {
                 localStorage.setItem("access_token", res.access_token);
                 localStorage.setItem("refresh_token", res.refresh_token);
                 toast.success("Login Successful!");
-                // router.push("/instructions");
-                // return;
+                router.push("/instructions");
+                return;
             }
             setStep("details");
         } catch (error) {
@@ -139,7 +139,7 @@ export default function Login() {
                                 Please wait...
                             </p>
                         )}
-                        <div className="max-h-[50vh] overflow-y-auto pr-1">
+                        <div className="h-full overflow-y-auto pr-1">
 
                             {step === "phone" && (
                                 <PhoneStep
