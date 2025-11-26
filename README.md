@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NexLearn MCQ Exam
 
-## Getting Started
+A fully responsive and optimized frontend application built using Next.js, Tailwind CSS, and modern development best practices.
+The project implements authentication, state management, reusable UI components, and performance-focused architecture.
+ 
+## 🚀 Tech Stack
 
-First, run the development server:
+* Next.js (Latest Version)
+* React
+* Tailwind CSS
+* TypeScript
+* Axios
+* JWT Authentication & Token Refresh
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Pixel-perfect UI based on provided Figma
+* Fully responsive layout (mobile → desktop)
+* JWT auth with access + refresh tokens
+* Exam module: question listing, answering, and submission
+* Organized file structure with reusable components
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Folder Structure
+    |-src
+        ├── components/
+        │   ├── Auth.tsx
+        │   ├── ComprehensionModal.tsx
+        │   ├── DetailsStep.tsx
+        │   ├── Navbar.tsx
+        │   ├── OtpStep.tsx
+        │   ├── PhoneStep.tsx
+        │   ├── QuestionCard.tsx
+        │   ├── ResultCard.tsx
+        │   ├── SubmitConfirmModal.tsx
+        │
+        ├── app/
+        │   ├── login/
+        │       ├── page.tsx
+        │   ├── instructions/
+        │       ├── page.tsx
+        │   ├── mcq/
+        │       ├── page.tsx
+        │   ├── service/
+        │       ├── AuthApi.ts   // axios + API calls
+        │   ├── global.css
+        │   ├── layout.tsx
+        │   ├── page.tsx
+        │
+        ├── utils/
+        │   ├── constants.ts
+        │   ├── custom-icon.tsx
+        ├── public/
+    |-.env    # Credential data
+    
 
-## Learn More
+## 🛠 Installation & Setup
+1. Clone the Repository
+    ```
+    git clone <repository-url>
+    cd <project-folder>
+2. Install Dependencies
+    ```
+    npm install
+3. Configure Environment Variables
+   Create a .env file:
+   ```
+   NEXT_PUBLIC_BASE_URL=https://nexlearn.noviindusdemosites.in/
+* Start the server on localhost:3000 to bypass CORS.
+4. Run the Development Server
+   ```
+   npm run dev
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔐 Authentication Flow
+* User enters mobile → send OTP
+* Enter OTP → verify OTP
+* If user exists → login tokens returned
+* If new user → create profile (name, email, qualification, image)
+* Access & refresh tokens stored securely
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ❗ Error Handling
+All endpoints return:
 
-## Deploy on Vercel
+* HTTP 400 → invalid request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* HTTP 401 → unauthorized
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* HTTP 500 → server error
+
+   
+   
+   
+
+   
+
+
